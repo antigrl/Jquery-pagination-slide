@@ -1,6 +1,6 @@
 $(function() {
-	var page=1;
-	var pages=3;
+	var sliderPage=1;
+	var sliderPages=3;
 
 	$('.arrow-left').click(function() {
     	$('<div class="left-box box"></div>').appendTo('.box-container');
@@ -12,12 +12,13 @@ $(function() {
 			$('.left-box').addClass('center-box').removeClass('left-box');
 		});
 
-		page--;
-		if(page < 1) {
-			page = 3;
+		sliderPage--;
+		if(sliderPage < 1) {
+			sliderPage = 3;
 		}
-  		$('.page-marker').removeClass('active').addClass('page');
-  		$('.page-control').children(':nth-child('+page+')').addClass('active').removeClass('page');
+  		$('.page-marker').removeClass('sliderActive').addClass('sliderPage');
+  		$('.page-control').children(':nth-child('+sliderPage+')').addClass('sliderActive').removeClass('sliderPage');
+        
 
 	});
 
@@ -32,12 +33,13 @@ $(function() {
 
 		});
 
-		page++;
-		if(page > 3) {
-			page = 1;
+		sliderPage++;
+		if(sliderPage > 3) {
+			sliderPage = 1;
 		}
-		$('.page-marker').removeClass('active').addClass('page');
-  		$('.page-control').children(':nth-child('+page+')').addClass('active').removeClass('page');
+        
+		$('.page-marker').removeClass('sliderActive').addClass('sliderPage');
+  		$('.page-control').children(':nth-child('+sliderPage+')').addClass('sliderActive').removeClass('sliderPage');
 	});
 });
 

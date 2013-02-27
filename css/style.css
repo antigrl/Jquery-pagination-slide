@@ -24,7 +24,7 @@
 	text-align: center;
 }
 
-.page {
+.sliderPage {
 	background: url('../img/bullets.png') no-repeat 0 -20px;
 	display: inline-block;
 	width: 22px;
@@ -32,7 +32,7 @@
 	text-indent: -9999px;
 }
 
-.active {
+.sliderActive {
 	background: url('../img/bullets.png') no-repeat -4px -2px;
 	display: inline-block;
 	width: 15px;
@@ -167,7 +167,7 @@ a#quickview-btn:hover { text-decoration: none; }
 }
 
 
-#heading {
+#quickview-heading {
 	width:360px;
 	height:44px;
 
@@ -203,7 +203,7 @@ a#quickview-btn:hover { text-decoration: none; }
 	text-shadow:0px 1px 0px #fff;
 }
 
-#content {
+#quickview-content {
 	width:360px;
 	height:144px;
 
@@ -218,7 +218,7 @@ a#quickview-btn:hover { text-decoration: none; }
 	border-radius:0px 0px 4px 4px;
 }
 
-#content p {
+#quickview-content p {
 	font-size:13px;
 	font-weight:normal;
 	text-align:center;
@@ -255,18 +255,18 @@ a#quickview-btn:hover { text-decoration: none; }
 		margin-left:-150px !important;
 		margin-top:-78px;
 	}
-	#heading {
+	#quickview-heading {
 		width:284px;
 		height:28px;
 
 		line-height:28px;
 		font-size:0.688em;
 	}
-	#content {
+	#quickview-content {
 		width:284px;
 		height:128px;
    	}
-   	#content p {
+   	#quickview-content p {
    		width:284px;
    		font-size:0.688em;
    	}
