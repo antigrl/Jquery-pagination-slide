@@ -1,0 +1,72 @@
+.box {
+	height:450px;
+	width:1020px;
+	position: fixed;
+	top: 100px;
+}
+.left-box {
+	left: -1450px;
+	background-color: #111;
+}
+.center-box {
+	left: 200px;
+	background-color: #111;
+}
+.right-box {
+	left: 1450px;
+	background-color: #111;
+}
+
+/* Pagination */
+
+.page-control {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.page {
+	background: url('../img/bullets.png') no-repeat 0 -20px;
+	display: inline-block;
+	width: 22px;
+	height: 20px;
+	text-indent: -9999px;
+}
+
+.active {
+	background: url('../img/bullets.png') no-repeat -4px -2px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	text-indent: -9999px;
+}
+
+/* Arrows */
+
+.arrow-left { 
+	margin-top:250px;
+	float: left;
+ }
+.arrow-left a {
+	width: 30px; 
+	height: 42px;
+	background: url('../img/arrows.png') -1px -2px;
+	display: block;
+}
+.arrow-left a:hover { 
+	background-position: -1px -48px; 
+}
+.arrow-right { 
+	margin-top: 250px;
+	float:right;
+ }
+.arrow-right a {
+	width: 30px; 
+	height: 42px;
+	background: url('../img/arrows.png') -33px -2px;
+	display: block;
+}
+.arrow-right a:hover { 
+	background-position: -33px -48px; 
+}
+
+.centered { text-align: center; }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+   
+  </head>
+
+  <body>
+
+
+  <div class="container">
+
+  	<div class="row">
+  		<div class="span12 page-control">
+  			<a href="#" class="page-marker active"></a>
+  			<a href="#" class="page-marker page"></a>
+  			<a href="#" class="page-marker page"></a>
+  		</div>
+  	</div>
+
+    <div class="row">
+    	<div class="span12 main">
+    		<div class="arrow-left"><a href="#"></a></div>
+    		<div class="box-container">
+	    		<div class="center-box box"></div>
+	    	</div>
+	    	<div class="arrow-right"><a href="#"></a></div>
+    	</div>
+    </div>
+
+  	<div class="row">
+  		<div class="span12 page-control">
+  			<a href="#" class="page-marker active"></a>
+  			<a href="#" class="page-marker page"></a>
+  			<a href="#" class="page-marker page"></a>
+  		</div>
+  	</div>
+
+</div>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+    $(function() {
+    	var page=1;
+    	var pages=3;
+
+    	$('.arrow-left').click(function() {
+	    	$('<div class="right-box box"></div>').appendTo('.box-container');
+
+    		$('.center-box').animate({left:'-1450px'},500, function() {
+    			$('.center-box').remove();
+    		});
+    		$('.right-box').animate({left:'200px'},500, function() {
+				$('.right-box').addClass('center-box').removeClass('right-box');
+    		});
+
+    		page--;
+    		if(page < 1) {
+    			page = 3;
+    		}
+	  		$('.page-marker').removeClass('active').addClass('page');
+	  		$('.page-control').children(':nth-child('+page+')').addClass('active').removeClass('page');
+
+    	});
+
+    	$('.arrow-right').click(function() {
+    		$('<div class="left-box box"></div>').appendTo('.box-container');
+
+    		$('.center-box').animate({left:'1450px'},500, function() {
+    			$('.center-box').remove();
+    		});
+    		$('.left-box').animate({left:'200px'},500, function() {
+    			$('.left-box').addClass('center-box').removeClass('left-box');
+
+    		});
+
+    		page++;
+    		if(page > 3) {
+    			page = 1;
+    		}
+    		$('.page-marker').removeClass('active').addClass('page');
+	  		$('.page-control').children(':nth-child('+page+')').addClass('active').removeClass('page');
+    	});
+
+    });
+
+    </script>
+
+
+  </body>
+</html>
