@@ -44,7 +44,7 @@ $(function() {
 });
 
 $(function() {
-    $('#button').click(function(e) { // Button which will activate our modal
+    $('#quickview-btn').click(function(e) { // Button which will activate our modal
         $('#modal').reveal({ // The item which will be opened with reveal
             animation: 'fade',                   // fade, fadeAndPop, none
             animationspeed: 600,                 // how fast animtions are
