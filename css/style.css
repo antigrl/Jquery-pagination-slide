@@ -1,6 +1,6 @@
 .box {
 	height:450px;
-	width:1020px;
+	width:850px;
 	position: fixed;
 	top: 100px;
 }
@@ -70,3 +70,8 @@
 }
 
 .centered { text-align: center; }
+
+#myModal {
+	height: 300px;
+	
+}
