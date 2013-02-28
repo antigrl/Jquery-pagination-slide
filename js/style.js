@@ -61,5 +61,7 @@ $(function() {
 });
 
 $(function() {
-    $('.tooltipPrice').tooltip();
+    $('.tooltipBlack').tooltip({
+        html: 'true'
+    });
 });
