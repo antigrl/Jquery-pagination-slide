@@ -142,7 +142,7 @@
 		      0px 1px 1px rgba(0,0,0,.1);
 }
 
-a.quickview-btn:hover { 
+a.quickview-btn:hover, a img.quickview-btn:hover { 
 	color: #666666;
 	text-decoration: none;
 }
