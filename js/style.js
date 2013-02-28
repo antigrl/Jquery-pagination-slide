@@ -1,6 +1,7 @@
+
 $(function() {
 	var sliderPage=1;
-	var sliderPages=3;
+	var sliderPage=3;
 
 	$('.arrow-left').click(function() {
     	$('<div class="left-box box"></div>').appendTo('.box-container');
@@ -18,7 +19,6 @@ $(function() {
 		}
   		$('.page-marker').removeClass('sliderActive').addClass('sliderPage');
   		$('.page-control').children(':nth-child('+sliderPage+')').addClass('sliderActive').removeClass('sliderPage');
-        
 
 	});
 
@@ -41,9 +41,14 @@ $(function() {
 		$('.page-marker').removeClass('sliderActive').addClass('sliderPage');
   		$('.page-control').children(':nth-child('+sliderPage+')').addClass('sliderActive').removeClass('sliderPage');
 	});
+
 });
 
 $(function() {
+    $('#quickview-btn').hide();
+    $('.quickview-item').hover( function() {
+        $('#quickview-btn').toggle();
+    });
     $('#quickview-btn').click(function(e) { // Button which will activate our modal
         $('#modal').reveal({ // The item which will be opened with reveal
             animation: 'fade',                   // fade, fadeAndPop, none
