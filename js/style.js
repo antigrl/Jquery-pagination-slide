@@ -45,12 +45,12 @@ $(function() {
 });
 
 $(function() {
-    $('#quickview-btn').hide();
+    $('.quickview-btn').hide();
     $('.quickview-item').hover( function() {
-        $('#quickview-btn').toggle();
+        $('.quickview-btn').toggle();
     });
-    $('#quickview-btn').click(function(e) { // Button which will activate our modal
-        $('#modal').reveal({ // The item which will be opened with reveal
+    $('.quickview-btn').click(function(e) { // Button which will activate our modal
+        $('.modal').reveal({ // The item which will be opened with reveal
             animation: 'fade',                   // fade, fadeAndPop, none
             animationspeed: 600,                 // how fast animtions are
             closeonbackgroundclick: true,
