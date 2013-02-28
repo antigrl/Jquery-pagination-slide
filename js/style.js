@@ -61,7 +61,7 @@ $(function() {
 });
 
 $(function() {
-    $('.tooltipBlack').tooltip({
+    $('.bootstrapTooltip').tooltip({
         html: 'true'
     });
 });
