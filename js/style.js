@@ -59,3 +59,7 @@ $(function() {
     return false;
     });
 });
+
+$(function() {
+    $('.tooltipPrice').tooltip();
+});

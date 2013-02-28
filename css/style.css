@@ -1,3 +1,8 @@
+.bump {
+	margin-top: 200px;
+	margin-left: 200px;
+}
+
 .box {
 	height:450px;
 	width:850px;
@@ -83,6 +88,10 @@
 }
 
 /* Quick view */
+.quickview-item {
+
+}
+
 .quickview-btn {
 	position: absolute;
 	display: block;
@@ -144,7 +153,10 @@
 		      0px 1px 1px rgba(0,0,0,.1);
 }
 
-a.quickview-btn:hover { text-decoration: none; }
+a.quickview-btn:hover { 
+	color: #666666;
+	text-decoration: none;
+}
 
 .modal {
 	visibility:hidden;
@@ -250,50 +262,4 @@ a.close {
 	bottom:20px;
 	right: 20px;
 
-}
-
-
-
-@media only screen and (max-width: 767px) {
-        
-	.modal {
-		width:284px;
-		height:156px;
-		padding:8px;
-
-		margin-left:-150px !important;
-		margin-top:-78px;
-	}
-	.quickview-heading {
-		width:284px;
-		height:28px;
-
-		line-height:28px;
-		font-size:0.688em;
-	}
-	.quickview-content {
-		width:284px;
-		height:128px;
-   	}
-   	.quickview-content p {
-   		width:284px;
-   		font-size:0.688em;
-   	}
-   	.button img { 
-		width:23px;
-		height:23px;
-	}
-	.button {
-		width:108px;
-		height:23px;
-
-		line-height:23px;
-		font-size:0.688em;
-	}
-	.button.green {
-		margin:0 4px 0 28px !important;
-	}
-	.button.red {
-		margin:0 28px 0 4px !important;
-	}
 }
